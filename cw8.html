@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <title>Ćwiczenie 8 - tabela</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Pawiłojć 49536">
+        <style>
+            table {
+                border-bottom: 3px solid burlywood;
+                border-left: 3px solid burlywood;
+                border-right: 3px solid burlywood;
+            }
+
+
+
+            caption {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-stretch: semi-condensed;
+                border-top: 3px solid burlywood;
+                border-left: 3px solid burlywood;
+                border-right: 3px solid burlywood;
+                padding: 0.2em;
+            }
+
+            td {
+                max-width: 200px;
+                max-height: 200px;
+                overflow: hidden;
+
+
+            }
+
+            td.empty {
+                background-color: mistyrose;
+                border-right: 2px solid white;
+                border-bottom: 5px solid white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <caption>Muzeum pojazdów</caption>
+            <tbody>
+                <tr>
+                    <td><img src="pojazd1.png" alt="stary pojazd" width="200" height="200"></td>
+                    <td><img src="pojazd2.png" alt="stary pojazd" width="200" height="200"></td>
+                    <td><img src="pojazd3.png" alt="stary pojazd" width="200" height="200"></td>
+                </tr>
+                <tr>
+                    <td><img src="pojazd4.png" alt="stary pojazd" width="200" height="200"></td>
+                    <td class="empty"></td>
+                    <td><img src="pojazd5.png" alt="stary pojazd" width="200" height="200"></td>
+                </tr>
+                <tr>
+                    <td><img src="pojazd6.png" alt="stary pojazd" width="200" height="200"></td>
+                    <td><img src="pojazd7.png" alt="stary pojazd" width="200" height="200"></td>
+                    <td><img src="pojazd8.png" alt="stary pojazd" width="200" height="200"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <title>Ćwiczenie 2 - podział strony</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Pawiłojć 49536">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            header,
+            footer,
+            h1 {
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .border {
+                border-style: solid;
+            }
+
+            footer,
+            header {
+                clear: both;
+                margin: 0.8em;
+                padding: 1em;
+                font-size: 1.2em;
+                font-weight: bold;
+
+            }
+
+            div.container {
+                display: flex;
+                width: 100%;
+            }
+
+            div.cell {
+                flex: 1;
+                margin: 0.8em;
+                padding: 1em;
+            }
+
+            .menu,
+            .links {
+                max-width: 25%;
+                min-height: 20em;
+            }
+
+            li,
+            p {
+                padding: 0.3em;
+            }
+
+            h1 {
+                font-size: 1.2em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="border">
+            <header class="border">
+                Strona internetowa szkoły
+            </header>
+            <div class="container">
+                <div class="cell border">
+                    <div class="container">
+                        <div class="cell border links">
+                            <h1>Ważne linki:</h1>
+                            <ul>
+                                <li><a href="https://www.gov.pl/web/edukacja-i-nauka">Ministerstwo Edukacji i Nauki</a>
+                                </li>
+                                <li><a href="https://www.ore.edu.pl/">Ośrodek Rozwoju i Edukacji</a></li>
+                                <li><a href="https://www.wsip.pl/">Wydawnictwa Szkolne i Pedagogiczne</a></li>
+                            </ul>
+                        </div>
+                        <div class="cell border">
+                            <h1>O nas:</h1>
+                            <p>
+                                Nasza szkoła jest najlepsza, najładniejsza i najlepiej położona.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell border menu">
+                    <h1>Menu:</h1>
+                    <menu>
+                        <li>Dla uczniów</li>
+                        <li>Dla nauczycieli</li>
+                        <li>Dla kandydatów</li>
+                        <li>Dla rodziców</li>
+                    </menu>
+                </div>
+            </div>
+            <footer class="border">
+                Strona zarządzana przez samorząd uczniowski
+            </footer>
+        </div>
+    </body>
+
+</html>

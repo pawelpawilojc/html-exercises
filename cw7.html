@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <title>Ćwiczenie 7 - formularz</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Pawiłojć 49536">
+        <style>
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            div.table {
+                display: table;
+                width: 600px;
+                height: 300px;
+                background-color: #eee;
+            }
+
+            div.tr {
+                display: table-row;
+            }
+
+            span.td,
+            div.td {
+                display: table-cell;
+                padding-bottom: 1em;
+                padding-right: 0.5em;
+
+            }
+
+            .music {
+                display: table-row;
+            }
+
+            .music-question {
+                vertical-align: middle;
+            }
+
+            img {
+                border-color: #993399;
+                border-style: solid;
+                border-image-width: 3px;
+            }
+
+            .flower {
+                vertical-align: middle;
+            }
+
+            .submit {
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="table">
+            <div class="tr">
+                <div class="td">
+                    <div class="table-inside">
+                        <form action="cw7.html">
+                            <div class="tr">
+                                <span class="td">
+                                    <label for="firstname">Podaj swoje imię:</label>
+                                </span>
+                                <span class="td">
+                                    <input type="text" name="firstname" id="firstname">
+                                </span>
+
+                            </div>
+                            <div class="tr">
+                                <span class="td">
+                                    <label for="lastname">Podaj swoje nazwisko</label>
+                                </span>
+                                <span class="td">
+                                    <input type="text" name="lastname" id="lastname">
+                                </span>
+                            </div>
+                            <div class="tr">
+                                <span class="td">
+                                    <label for="age">Ile masz lat?</label>
+                                </span>
+                                <span class="td">
+                                    <input type="number" id="age" name="age" min="1" max="130">
+                                </span>
+                            </div>
+                            <div class="tr">
+                                <span class="td">
+                                    <label>Wybierz płeć:</label>
+                                </span>
+                                <span class="td">
+                                    <label><input type="radio" name="sex" value="K">Kobieta</label>
+                                    <label><input type="radio" name="sex" value="M">Mężczyzna</label>
+                                </span>
+                            </div>
+                            <div class="tr">
+                                <span class="td music-question">
+                                    Jakiej muzyki słuchasz?
+                                </span>
+                                <span class="td">
+                                    <label class="music"><input type="checkbox" id="heavy-metal"
+                                            name="heavy-metal">Heavy
+                                        Metal</label>
+                                    <label class="music"><input type="checkbox" id="rock" name="rock">Rock</label>
+                                    <label class="music"><input type="checkbox" id="pop" name="pop">Pop</label>
+                                    <label class="music"><input type="checkbox" id="techno" name="techno">Techno</label>
+                                </span>
+                            </div>
+                            <div class="tr">
+                                <span class="td"></span>
+                                <span class="td submit">
+                                    <input type="submit" value="Wyślij">
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+                </div>
+                <div class="td flower">
+                    <img src="roslina.jpg" alt="roślinka" width="200">
+                    <div hidden>Obraz <a
+                            href="https://pixabay.com/pl/users/armennano-9097212/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4144983">
+                            armennano</a> z <a
+                            href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4144983">
+                            Pixabay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Tak już się chyba raczej nie robi formularzy, żeby je wsadzać do tabeli.-->
+        <div hidden>
+            <h1>Permitted &lt;table&gt; element content</h1>
+            <h2>In this order:</h2>
+            <ol>
+                <li>an optional <code>&lt;caption&gt;</code>
+                    element,
+                </li>
+                <li>zero or more <code>&lt;colgroup&gt;</code>
+                    elements,</li>
+                <li>an optional <code>&lt;thead&gt;</code>
+                    element,
+                </li>
+                <li>either one of the following:
+                    <ul>
+                        <li>zero or more <code>&lt;tbody&gt;</code>
+                            elements</li>
+                        <li>one or more <code>&lt;tr&gt;</code>
+                            elements
+                        </li>
+                    </ul>
+                </li>
+                <li>an optional <code>&lt;tfoot&gt;</code>
+                    element</li>
+            </ol>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">&lt;table&gt;: The Table element -
+                HTML: HyperText Markup Language | MDN</a>
+        </div>
+    </body>
+
+</html>

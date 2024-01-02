@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <title>Ćwiczenie 4 - formularz</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Pawiłojć 49536">
+        <style>
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            div.table {
+                display: table;
+            }
+
+            div.tr {
+                display: table-row;
+            }
+
+            span.td {
+                display: table-cell;
+                padding-top: 0.5em;
+                padding-right: 0.5em;
+                vertical-align: middle;
+            }
+
+            fieldset {
+                max-width: max-content;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="cw4.html">
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <div class="table">
+                    <div class="tr">
+                        <span class="td">
+                            <label for="firstname">Imię:</label>
+                        </span>
+                        <span>
+                            <input type="text" name="firstname" id="firstname">
+                        </span>
+                    </div>
+                    <div class="tr">
+                        <span class="td">
+                            <label for="lastname">Nazwisko:</label>
+                        </span>
+                        <span>
+                            <input type="text" name="lastname" id="lastname">
+                        </span>
+                    </div>
+                    <div class="tr">
+                        <span class="td">
+                            <label for="date-of-birth">Data urodzenia:</label>
+                        </span>
+                        <span class="td">
+                            <input type="date" name="date-of-birth" id="date-of-birth">
+                        </span>
+                    </div>
+                    <div class="tr">
+                        <span class="td">
+                            <label for="place-of-birth">Miejsce urodzenia:</label>
+                        </span>
+                        <span class="td">
+                            <input type="text" name="place-of-birth" id="place-of-birth">
+                        </span>
+                    </div>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pozostałe informacje</legend>
+                <div class="table">
+                    <div class="tr">
+                        <span class="td">
+                            <label class="cell">Wykształcenie:</label>
+                        </span>
+                        <span class="td">
+                            <input class="radio" type="radio" id="primary" name="educational-stage" value="primary">
+                            <label for="primary">podstawowe</label>
+                            <input class="radio" type="radio" id="secondary" name="educational-stage" value="secondary">
+                            <label for="secondary">średnie</label>
+                            <input class="radio" type="radio" id="high-school" name="educational-stage"
+                                value="high-school">
+                            <label for="high-school">wyższe</label>
+                        </span>
+                    </div>
+                    <div class="tr">
+                        <span class="td">
+                            <label for="profession">Zawód wykonywany:</label>
+                        </span>
+                        <span class="td">
+                            <input type="text" name="profession" id="profession">
+                        </span>
+                    </div>
+                    <div class="tr">
+                        <span class="td">
+                            <label for="skills">Dodatkowe umiejętności</label>
+                        </span>
+                        <span class=" td">
+                            <textarea id="skills" name="skills" rows="10" cols="50" class="cell"></textarea>
+                        </span>
+                    </div>
+                </div>
+
+            </fieldset>
+            <input type="submit" value="Wyślij">
+        </form>
+    </body>
+
+</html>
